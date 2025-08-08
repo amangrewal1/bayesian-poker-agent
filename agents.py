@@ -98,7 +98,7 @@ class BayesianAgent:
         lk = self._likelihood()
         p_opp_fold_to_bet = float(np.sum(belief * lk[:, FOLD]))
 
-        call_thresh = max(0.10, pot_odds - 0.35 * bluff)
+        call_thresh = max(0.10, pot_odds - 0.30 * bluff)
 
         if owe == 0:
             if win_p >= 0.55 and BET_RAISE in legal:
