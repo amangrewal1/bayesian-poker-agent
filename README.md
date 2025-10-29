@@ -1,5 +1,7 @@
 # Bayesian Poker Strategy Agent
 
+![tests](https://github.com/amangrewal1/bayesian-poker-agent/actions/workflows/test.yml/badge.svg) ![license](https://img.shields.io/badge/license-MIT-blue)
+
 Heads-up limit Texas Hold'em agent that models opponent hand strength via Bayesian
 belief updates from betting actions, then selects actions using the posterior
 belief. Bluff-frequency inference is used to adjust call thresholds and avoid
