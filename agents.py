@@ -37,9 +37,9 @@ class BayesianAgent:
     from observed betting actions, and updates call thresholds based on
     inferred bluff frequency."""
 
-    def __init__(self, n_buckets=5, rng=None):
+    def __init__(self, n_buckets=5, rng=None, seed=None):
         self.n_buckets = n_buckets
-        self.rng = rng or random.Random()
+        self.rng = rng or (random.Random(seed) if seed is not None else random.Random())
         self.action_counts = self._seed_counts()
         self.bluff_raises = 1.0
         self.total_raises = 4.0
