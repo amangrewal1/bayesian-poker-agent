@@ -75,3 +75,9 @@ agents.py    — FixedThresholdAgent, BayesianAgent
 simulate.py  — match runner and statistics
 main.py      — entry point
 ```
+
+
+## Notes
+
+The 7-card evaluator handles all standard 5-card hand rankings; ties are
+resolved by the sorted tuple of card ranks. See `poker.py` for the lookup.
