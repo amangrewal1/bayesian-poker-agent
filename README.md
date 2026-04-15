@@ -55,6 +55,12 @@ Bayesian vs FixedThreshold
   Forced folds by Bayesian: 19,460   by FixedThr: 3,750
 ```
 
+![bb/100 convergence across 5 seeds](convergence.png)
+
+*Running bb/100 over 5 independent seeds × 15k hands each. Early hands are
+noisy (expected with small samples), but the edge converges to roughly
++55 bb/100 by ~10k hands. Shaded band is ±1 std across seeds.*
+
 - Bayesian agent wins showdowns ~24% more often than the symmetric
   fixed-threshold baseline by correctly folding against opponent raises
   (inferred strong) and value-betting/bluffing against passive lines (inferred
