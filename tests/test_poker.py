@@ -1,6 +1,7 @@
-from poker import hand_strength
+from poker import Card, hand_strength
 
 
 def test_hand_strength_in_range():
-    s = hand_strength(((0, 12), (1, 12)), [])  # paired aces preflop
+    # Paired aces preflop (hearts + spades)
+    s = hand_strength([Card(12, 2), Card(12, 3)], [])
     assert 0.0 <= s <= 1.0
